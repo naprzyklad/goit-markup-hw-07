@@ -121,6 +121,10 @@
 
 /*____________________________________________________________NAV-MENU_______________________________________________________*/
 
+.hamburger-svg {
+  fill: #2e2f42;
+}
+
 .navigation {
   display: flex;
   gap: 332px;
@@ -129,6 +133,13 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .container {
+    width: 428px;
+  }
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
