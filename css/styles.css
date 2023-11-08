@@ -71,16 +71,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
-  margin-right: 76px;
+  margin: 0 auto 16px auto;
 }
 
 .web-header {
   color: var(--color-logo-studio);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.web-footer {
-  color: var(--footer-logo-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -170,9 +165,15 @@
   border-radius: 2px;
 }
 /*=========================================   Footer   =========================================*/
+.web-footer {
+  color: var(--footer-logo-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 .link-footer {
   text-decoration: none;
@@ -181,7 +182,9 @@
 }
 .footer-content {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-writing {
   color: var(--footer-logo-color);
@@ -190,8 +193,9 @@
   width: 264px;
 }
 .footer-text {
-  gap: 120px;
-  margin-right: 120px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-media {
@@ -202,13 +206,15 @@
   gap: 16px;
 }
 .social-title {
-  font-size: 16px;
-  font-weight: 96px;
-  font-weight: 500;
-  letter-spacing: 0.32px;
   color: #ffffff;
-  margin-bottom: 16px;
-  line-height: 1.5;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+  margin: 0 auto 16px auto;
+  text-align: center;
 }
 
 /*=========================================  Hero section  =========================================*/
@@ -221,11 +227,12 @@
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/peopleoffice.jpg);
-  max-width: 1440px;
+  max-width: 767px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  width: 100%;
 }
 .head-title {
   font-size: 56px;
@@ -299,11 +306,9 @@
 }
 
 .ul-goals {
-  display: inline-flex;
+  display: flex;
   gap: 72px;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 .li-goals {
   width: calc((100% - 16px));
@@ -348,15 +353,16 @@
 }
 /*=========================================  Our Team  =========================================*/
 .ul-team {
-  display: inline-flex;
-  gap: 72px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 72px;
 }
 .list-team {
   background-color: #ffffff;
-  width: calc(100% - 82px);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -366,43 +372,38 @@
 }
 
 .team-head {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--head-color);
+  display: flex;
+  justify-content: center;
   margin-bottom: 72px;
+  color: var(--main-page-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .name {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.72px;
   color: var(--head-color);
-  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.4px;
   margin-bottom: 8px;
-  text-transform: capitalize;
 }
 
 .job {
-  display: flex;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--content-color);
-  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
 }
 
 .team-photo {
-  display: flex;
   padding: 32px 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  width: 232px;
+  text-align: center;
 }
 
 .ourteam-social-list {
@@ -419,19 +420,23 @@
 }
 /*=========================================  CUSTOMERS  =========================================*/
 .customers-head {
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  color: var(--head-color);
+  display: flex;
+  justify-content: center;
   margin-bottom: 72px;
-  letter-spacing: 0.72px;
+  color: var(--head-color);
+  font-size: 36px;
   font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.72px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .list-customers {
-  column-count: 2;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 96px;
 }
 .customer {
   margin: 72px 0px;
@@ -792,20 +797,25 @@
 }
 
 .sub-par {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .subscribe-container {
-  margin-left: 80px;
+  padding-top: 72px;
 }
 .sub-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .sub-label {
@@ -813,7 +823,7 @@
 }
 
 .sub-input {
-  width: 264px;
+  width: 398px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -831,22 +841,23 @@
 }
 
 .sub-button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
-  min-width: 165px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+  gap: 16px;
   cursor: pointer;
-  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-left: 24px;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  min-width: 165px;
+  height: 40px;
 }
 
 .sub-svg {
