@@ -226,7 +226,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/peopleoffice.jpg);
+    url(../images/heroBackground/people-office-mobile@x1.jpg);
   max-width: 767px;
   background-repeat: no-repeat;
   background-position: center;
@@ -234,6 +234,20 @@
   margin: 0 auto;
   width: 100%;
 }
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-headline-background {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroBackground/people-office-mobilex@x2.jpg);
+  }
+}
+
 .head-title {
   font-size: 56px;
   line-height: 1.07;

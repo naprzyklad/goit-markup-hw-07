@@ -1,7 +1,5 @@
 @import url("normalize.min.css");
-@import url("form.css");
 @import url("vars.css");
-@import url("mobile.css");
 
 * {
   margin: 0px;
