@@ -81,6 +81,17 @@
     margin-right: 76px;
   }
 
+  .footer-logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--color-logo);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+  }
+
   .web-header {
     color: var(--color-logo-studio);
     line-height: 1.5;
