@@ -1,6 +1,7 @@
 @import url("normalize.min.css");
 @import url("vars.css");
 @import url("desktop.css");
+@import url("tablet.css");
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   /*=========================================   GENERAL BODY SETTINGS   =========================================*/
@@ -636,12 +637,14 @@
 
   .subscribe-container {
     padding-top: 72px;
+    display: flex;
+    flex-direction: column;
   }
   .sub-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 16px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sub-label {
