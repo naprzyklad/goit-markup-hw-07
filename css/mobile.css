@@ -49,6 +49,7 @@
     padding: 0;
   }
   /*=========================================   LINKS   =========================================*/
+
   .ourteam-target-link,
   .target-link {
     width: 100%;
@@ -402,13 +403,14 @@
   .list-customers {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
     padding-bottom: 96px;
   }
   .customer {
-    margin: 72px 0px;
+    width: 168px;
     height: 88px;
-    width: 190px;
   }
 
   .customer-link {
@@ -850,8 +852,39 @@
     display: flex;
   }
 
+  .hamburger-mail {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: var(--color-address-link-default);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hamburger-phone {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    color: var(--social-link-bg-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: capitalize;
+  }
   .hamburger-container {
-    display: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .hamburger-container.is-open {
+    transform: translateY(0);
   }
 
   .close-hamburger {
@@ -887,6 +920,7 @@
     flex-direction: column;
     gap: 40px;
     padding-left: 40px;
+    margin-bottom: 48px;
   }
 
   .mobile-menu {
@@ -897,6 +931,28 @@
 
   .mobile-address {
     padding-top: 284px;
+  }
+
+  .hamburger-target-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--social-link-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hamburger-social-link {
+    width: 40px;
+    height: 40px;
+  }
+  .hamburger-social-list {
+    display: flex;
+    gap: 56px;
+    margin-bottom: 40px;
+    justify-content: center;
   }
 }
 

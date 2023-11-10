@@ -1,0 +1,9 @@
+/* ================================================= NOT DESKTOP 👇 ========================================= */
+@import url("form.css");
+@import url("normalize.min.css");
+@import url("vars.css");
+@media screen and (max-width: 1157px) {
+  .icon-features {
+    display: none;
+  }
+}
