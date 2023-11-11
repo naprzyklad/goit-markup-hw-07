@@ -652,7 +652,7 @@
   }
 
   .sub-input {
-    width: 398px;
+    min-width: 320px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
